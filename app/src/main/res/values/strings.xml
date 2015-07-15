@@ -7,4 +7,9 @@
     <string name="title_activity_login_page">LoginPage</string>
     <string name="title_activity_fb_login_page">FbLoginPage</string>
     <string name="title_activity_checkout_page">CheckoutPage</string>
+    <string name="title_activity_locality_page">LocalityPage</string>
+    <string name="title_activity_welcom_page">WelcomPage</string>
+    <string name="title_activity_welcome_page">WelcomePage</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_faq_page">FaqPage</string>
 </resources>

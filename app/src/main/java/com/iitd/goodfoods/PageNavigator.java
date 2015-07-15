@@ -40,13 +40,13 @@ public class PageNavigator extends Activity {
     }
 
     public void GoToWelcome(View view) {
-//        Intent bleh = new Intent(this,WelcomePage.class);
-//        startActivity(bleh);
+        Intent bleh = new Intent(this,WelcomePage.class);
+        startActivity(bleh);
     }
 
     public void GoToFAQ(View view) {
-//        Intent bleh = new Intent(this,FaqPage.class);
-//        startActivity(bleh);
+        Intent bleh = new Intent(this,FaqPage.class);
+        startActivity(bleh);
     }
 
     public void GoToProduct(View view) {
@@ -60,8 +60,8 @@ public class PageNavigator extends Activity {
     }
 
     public void GoToStore(View view) {
-//        Intent bleh = new Intent(this,LocalityPage.class);
-//        startActivity(bleh);
+        Intent bleh = new Intent(this,LocalityPage.class);
+        startActivity(bleh);
     }
 
     public void GoToLogin(View view) {

@@ -36,6 +36,18 @@
             android:name=".CheckoutPage"
             android:label="@string/title_activity_checkout_page" >
         </activity>
+        <activity
+            android:name=".LocalityPage"
+            android:label="@string/title_activity_locality_page" >
+        </activity>
+        <activity
+            android:name=".WelcomePage"
+            android:label="@string/title_activity_welcome_page" >
+        </activity>
+        <activity
+            android:name=".FaqPage"
+            android:label="@string/title_activity_faq_page" >
+        </activity>
     </application>
 
 </manifest>
