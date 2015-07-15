@@ -69,7 +69,7 @@ public class PageNavigator extends Activity {
         startActivity(bleh);
     }
 
-    public void GoTOFbLogin(View view) {
+    public void GoToFbLogin(View view) {
         Intent bleh = new Intent(this,FbLoginPage.class);
         startActivity(bleh);
     }
