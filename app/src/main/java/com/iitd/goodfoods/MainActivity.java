@@ -1,18 +1,65 @@
 package com.iitd.goodfoods;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.io.File;
+import java.io.FileOutputStream;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (IfFirstTime())
+        {
+            TextView t1= (TextView) findViewById(R.id.toptitle);
+            t1.setText("first time app opened");
+            Intent bleh = new Intent(this,PageNavigator.class);
+            startActivity(bleh);
+        }
+        else{
+            TextView t1= (TextView) findViewById(R.id.toptitle);
+            t1.setText("app opened previously");
+            Intent bleh = new Intent(this,PageNavigator.class);
+//            Intent bleh = new Intent(this,LoginPage.class);
+            startActivity(bleh);
+
+        }
     }
+
+    public boolean IfFirstTime()
+    {
+        File file = new File(getFilesDir(), "firsttime.txt");
+        if (file.exists())
+        {
+            return false;
+        }
+        else
+        {
+            Log.d("randomtag", "need to createfile");
+            FileOutputStream outputStream;
+            try {
+                outputStream = openFileOutput("firsttime.txt", Context.MODE_PRIVATE);
+                outputStream.write("hello".getBytes());
+                outputStream.close();
+            } catch (Exception e) {
+                Log.d("randomtag","In catch");
+                e.printStackTrace();
+            }
+        }
+        return true;
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
