@@ -52,6 +52,10 @@
             android:name=".ProductInfoPage"
             android:label="@string/title_activity_product_info_page" >
         </activity>
+        <activity
+            android:name=".StorePage"
+            android:label="@string/title_activity_store_page" >
+        </activity>
     </application>
 
 </manifest>

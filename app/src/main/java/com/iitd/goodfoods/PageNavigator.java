@@ -73,4 +73,9 @@ public class PageNavigator extends Activity {
         Intent bleh = new Intent(this,FbLoginPage.class);
         startActivity(bleh);
     }
+
+    public void GoToStorePage(View view) {
+        Intent bleh = new Intent(this, StorePage.class);
+        startActivity(bleh);
+    }
 }

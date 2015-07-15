@@ -62,10 +62,10 @@
         android:layout_height="wrap_content"
         android:text="Login Page"
         android:id="@+id/button_login"
+        android:onClick="GoToLogin"
         android:layout_alignTop="@+id/buttonregion"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="GoToLogin"/>
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -77,5 +77,15 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="42dp"
         android:onClick="GoToFbLogin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Page"
+        android:id="@+id/button_store"
+        android:layout_alignTop="@+id/button_fb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="GoToStorePage"/>
 
 </RelativeLayout>

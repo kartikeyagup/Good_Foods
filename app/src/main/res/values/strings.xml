@@ -13,4 +13,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_faq_page">FaqPage</string>
     <string name="title_activity_product_info_page">ProductInfoPage</string>
+    <string name="title_activity_store_page">StorePage</string>
 </resources>
