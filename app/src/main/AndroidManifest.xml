@@ -32,6 +32,10 @@
             android:name=".FbLoginPage"
             android:label="@string/title_activity_fb_login_page" >
         </activity>
+        <activity
+            android:name=".CheckoutPage"
+            android:label="@string/title_activity_checkout_page" >
+        </activity>
     </application>
 
 </manifest>

@@ -6,4 +6,5 @@
     <string name="title_activity_page_navigator">PageNavigator</string>
     <string name="title_activity_login_page">LoginPage</string>
     <string name="title_activity_fb_login_page">FbLoginPage</string>
+    <string name="title_activity_checkout_page">CheckoutPage</string>
 </resources>

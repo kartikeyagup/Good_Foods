@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CheckoutPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView   android:id="@+id/help_title_gest"
+                android:text="title"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:onClick="toggle_contents"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Personal Information"
+                android:onClick="personalinfo"/>
+
+            `            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/personalinform">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/name"
+                    android:layout_toEndOf="@+id/name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="82dp"
+                    android:id="@+id/editTextName" />
+
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+            <!--android:text="Name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/name1"-->
+            <!--android:layout_marginLeft="27dp"-->
+            <!--android:layout_marginStart="27dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+            <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_toEndOf="@+id/name1"-->
+            <!--android:id="@+id/editTextName1" />-->
+
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email ID"
+                    android:id="@+id/emailid"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/emailid"
+                    android:layout_toEndOf="@+id/emailid"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="82dp"
+                    android:id="@+id/editTextEmail" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No."
+                    android:id="@+id/phoneno"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/phoneno"
+                    android:layout_toEndOf="@+id/phoneno"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="82dp"
+                    android:id="@+id/edittextphone" />
+
+            </RelativeLayout>
+        </LinearLayout>            <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView" />-->
+
+            <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView1" />-->
+
+
+            <!--content to hide/show -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:text="address"
+                android:onClick="addressfill"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/addressfill">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="82dp"
+                    android:id="@+id/address1" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="82dp"
+                    android:id="@+id/address2" />
+
+
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Options"
+                android:id="@+id/deliveryop"
+                android:onClick="deliveryoptions"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/deliveryoplayout">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="free delivery"
+                        android:id="@+id/delivery1"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="paid delivery"
+                        android:id="@+id/delivery2"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="another method"
+                        android:id="@+id/delivery3"/>
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offers"
+                android:id="@+id/offers"
+                android:onClick="offers"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Options"
+                android:id="@+id/paymentop"
+                android:onClick="paymentoption"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cash on delivery"
+                android:id="@+id/cashondelivery"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:id="@+id/order"
+                android:onClick="order"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="buttonenamess"-->
+    <!--android:onClick="changevisibiity"-->
+    <!--android:layout_gravity="center_horizontal" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="secondbutton"-->
+    <!--android:onClick="changevisibiitybutton2"/>-->
+
+</LinearLayout>
