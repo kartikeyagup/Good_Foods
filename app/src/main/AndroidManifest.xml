@@ -48,6 +48,10 @@
             android:name=".FaqPage"
             android:label="@string/title_activity_faq_page" >
         </activity>
+        <activity
+            android:name=".ProductInfoPage"
+            android:label="@string/title_activity_product_info_page" >
+        </activity>
     </application>
 
 </manifest>

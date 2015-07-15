@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context="com.iitd.goodfoods.ProductInfoPage">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/RelativeLayoutNamePrice"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Batman"
+                android:id="@+id/mytextview_Name"/>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Rs.500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/mytextview_Price"/>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warner Brothers"
+                android:id="@+id/mytextview_Seller"
+                android:layout_below="@+id/mytextview_Name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 pc"
+                android:id="@+id/quantity"
+                android:layout_below="@+id/mytextview_Seller"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:id="@+id/buttondescription"
+                android:layout_below="@+id/quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specifications"
+                android:id="@+id/button_Specifications"
+                android:layout_alignTop="@+id/buttondescription"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewData"
+                android:layout_below="@+id/buttondescription"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+            </ScrollView>
+            <Button
+                android:layout_width="fill_parent"
+                android:background="#FF00AA00"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:id="@+id/button_cart"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil and strikes terror into the hearts of criminals everywhere. He is also a founding member of the Justice League and the Outsiders."
+                android:id="@+id/bigtext"
+                android:layout_below="@+id/buttondescription"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/button_cart" />
+
+        </RelativeLayout>
+
+
+        <!--<LinearLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/RelativeLayout01"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="10dp">-->
+
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+
+    <!--<TextView-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:id="@+id/toptitlename"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:text="Batman"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:text="Large Text"-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_weight="1" />-->
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/toptitle1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:src="@drawable/blacklogo"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.5"/>-->
+
+
+
+    <!--<Button-->
+    <!--android:id="@+id/buttongoon"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:text="Ok, Got it!"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:onClick="goon"/>-->
+</LinearLayout>

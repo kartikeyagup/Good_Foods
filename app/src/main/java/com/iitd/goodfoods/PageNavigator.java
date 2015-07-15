@@ -50,8 +50,8 @@ public class PageNavigator extends Activity {
     }
 
     public void GoToProduct(View view) {
-//        Intent bleh = new Intent(this,ProductInfoPage.class);
-//        startActivity(bleh);
+        Intent bleh = new Intent(this,ProductInfoPage.class);
+        startActivity(bleh);
     }
 
     public void GoToExit(View view) {
