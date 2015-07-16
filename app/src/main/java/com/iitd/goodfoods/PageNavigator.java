@@ -78,4 +78,9 @@ public class PageNavigator extends Activity {
         Intent bleh = new Intent(this, StorePage.class);
         startActivity(bleh);
     }
+
+    public void GoToCartPage(View view) {
+        Intent bleh = new Intent(this, CartPage.class);
+        startActivity(bleh);
+    }
 }

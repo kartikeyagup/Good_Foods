@@ -15,4 +15,5 @@
     <string name="title_activity_product_info_page">ProductInfoPage</string>
     <string name="title_activity_store_page">StorePage</string>
     <string name="facebook_app_id">802340939880235</string>
+    <string name="title_activity_cart_page">CartPage</string>
 </resources>
