@@ -1,10 +1,23 @@
 package com.iitd.goodfoods;
 
 import android.app.Activity;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
+//import com.facebook.AccessToken;
 
 
 public class FbLoginPage extends Activity {
@@ -12,8 +25,14 @@ public class FbLoginPage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
+
         setContentView(R.layout.activity_fb_login_page);
+        LoginButton loginButton = (LoginButton) findViewById(R.id.button_login);
+     //   loginButton.setReadPermissions("user_name");
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -21,6 +40,37 @@ public class FbLoginPage extends Activity {
         getMenuInflater().inflate(R.menu.menu_fb_login_page, menu);
         return true;
     }
+
+//    public View onCreateView(
+//            LayoutInflater inflater,
+//            ViewGroup container,
+//            Bundle savedInstanceState) {
+//       // View view = inflater.inflate(R.layout.splash, container, false);
+//
+//        LoginButton loginButton = (LoginButton) findViewById(R.id.button_login);
+//        loginButton.setReadPermissions("user_friends");
+//        // If using in a fragment
+////        loginButton.setFragment(this);
+//        // Other app specific specialization
+//
+//        // Callback registration
+////        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+//            @Override
+//            public void onSuccess(LoginResult loginResult) {
+//                // App code
+//            }
+//
+//            @Override
+//            public void onCancel() {
+//                // App code
+//            }
+//
+//            @Override
+//            public void onError(FacebookException exception) {
+//                // App code
+//            }
+//        ;
+//    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
