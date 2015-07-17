@@ -18,9 +18,23 @@ public class CartPage extends Activity {
             "Bing",
             "Itunes",
             "Wordpress",
+            "Drupal",
+            "Google Plus",
+            "Twitter",
+            "Windows",
+            "Bing",
+            "Itunes",
+            "Wordpress",
             "Drupal"
     } ;
     Integer[] imageId = {
+            R.drawable.batman,
+            R.drawable.batman,
+            R.drawable.batman,
+            R.drawable.batman,
+            R.drawable.batman,
+            R.drawable.batman,
+            R.drawable.batman,
             R.drawable.batman,
             R.drawable.batman,
             R.drawable.batman,
